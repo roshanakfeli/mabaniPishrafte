@@ -1,17 +1,12 @@
 package Vehicle;
 
-public class Motor {
-    boolean isOn;
-
-    public void roshan() {
-        isOn = true;
-    }
-
-    void khamoosh() {
-        isOn = false;
-    }
-    
+public class Motor extends Vehicle {
     public boolean ayaDarHaleHarekatAst() {
-        return false;
+        return isOn;
+    }
+
+    @Override
+    public String getMark() {
+        return "Motor";
     }
 }

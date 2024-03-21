@@ -7,8 +7,8 @@ public class CarTest {
     @Test
     void MashinBayadHarekatKonad() {
         //Given
-        Mashin benz = new Mashin("Benz");
-        Mashin bmw = new Mashin("BMW");
+        Vehicle benz = new Mashin("Benz");
+        Vehicle bmw = new Mashin("BMW");
 
         //When
         boolean ayaHarekatMikonad = benz.ayaDarHaleHarekatAst();

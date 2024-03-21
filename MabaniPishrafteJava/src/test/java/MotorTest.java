@@ -1,4 +1,5 @@
 import Vehicle.Motor;
+import Vehicle.Vehicle;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -6,7 +7,7 @@ public class MotorTest {
     @Test
     void MotorBayadHarekatKonad() {
         // Given
-        Motor motor = new Motor();
+        Vehicle motor = new Motor();
 
         // When
         boolean ayaHarekatMikonad = motor.ayaDarHaleHarekatAst();
