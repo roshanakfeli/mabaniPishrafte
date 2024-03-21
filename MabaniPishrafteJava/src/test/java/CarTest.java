@@ -1,30 +1,57 @@
+import org.junit.jupiter.api.Test;
+
 public class CarTest {
 
-    class Car {
-        // dade || data
-        boolean isOn;
-        boolean isOpen;
+    @Test
+    void MashinBayadHarekatKonad() {
+        //Given
 
-        // method
-        void roshanAst(){
+        //When
+
+        //Then
+
+
+        Mashin mashin = new Mashin();
+        mashin.darBazAst();
+        mashin.roshan();
+
+        System.out.println("Aya dar mashin baz ast?" + mashin.isOpen);
+
+        Mashin pride = new Mashin("Pride");
+        pride.roshan();
+
+    }
+
+    class Mashin{
+        boolean isOn; // false
+        boolean isOpen; // false
+        String mark;
+
+        Mashin() {
+            System.out.println("Yek Mashin bedone dade sakhte shod.");
+        }
+        Mashin(String mark) {
+            this.mark = mark;
+        }
+
+        void roshan() {
             System.out.println("Mashin roshan ast.");
             isOn = true;
         }
 
-        void khamoshAst(){
-            System.out.println("Mashin khamosh ast.");
+        void khamoosh() {
+            System.out.println("Mashin khamoosh ast.");
             isOn = false;
         }
 
-        void darBazAst(){
+        void darBazAst() {
             System.out.println("dar baz ast.");
             isOpen = true;
         }
 
-        void darBasteAst(){
+        void darBasteAst() {
             System.out.println("dar baste ast.");
             isOpen = false;
         }
     }
-
 }
