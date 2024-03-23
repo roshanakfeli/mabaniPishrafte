@@ -7,7 +7,7 @@ public class Mashin extends Vehicle implements SandoghDar, GearBox {
     String mark;
     Ranande ranande;
     int gonjayeshSandogh;
-    String typeDande;
+    Dande typeDande;
 
 
     public Mashin() {
@@ -17,7 +17,7 @@ public class Mashin extends Vehicle implements SandoghDar, GearBox {
         this.mark = mark;
     }
 
-    public Mashin(String mark, int gonjayeshSandogh, String typeDande) {
+    public Mashin(String mark, int gonjayeshSandogh, Dande typeDande) {
         this.mark = mark;
         this.gonjayeshSandogh = gonjayeshSandogh;
         this.typeDande = typeDande;
@@ -45,8 +45,8 @@ public class Mashin extends Vehicle implements SandoghDar, GearBox {
     }
 
     @Override
-    public String typeDande() {
-        return "Automatic";
+    public Dande typeDande() {
+        return typeDande;
     }
 
     @Override

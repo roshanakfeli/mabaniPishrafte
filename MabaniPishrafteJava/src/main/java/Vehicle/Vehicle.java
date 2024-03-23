@@ -14,4 +14,5 @@ public abstract class Vehicle {
     public abstract boolean ayaDarHaleHarekatAst();
 
     public abstract String getMark();
+
 }
