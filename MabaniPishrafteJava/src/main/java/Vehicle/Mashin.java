@@ -2,6 +2,7 @@ package Vehicle;
 
 public class Mashin extends Vehicle implements SandoghDar, GearBox {
 
+    public static int tedadeForosh;
     boolean isOpen; // false
     String mark;
     Ranande ranande;
