@@ -1,3 +1,5 @@
+package khodro;
+
 import Vehicle.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
