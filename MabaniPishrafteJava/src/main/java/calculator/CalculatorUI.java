@@ -50,10 +50,10 @@ public class CalculatorUI {
         JButton point = new JButton(".");
         point.setBounds(0, 200, WIDTH, HEIGHT);
         point.addActionListener(event -> {
-            if(JText.getText().contains(".")){
-            } else {
+//            if(JText.getText().contains(".")){
+//            } else {
+//            }
                 JText.setText(JText.getText() + point.getText());
-            }
         });
 
         JButton zero = getButton("0", 50, 200);
